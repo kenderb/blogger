@@ -13,6 +13,6 @@
     %>
   </li>
 </ul>
-
-
-
+<h3>Comments (<%= @article.comments.size %>)</h3>
+<%= render partial: 'articles/comment', collection: @article.comments %>
+<%= render partial: 'comments/form' %>
