@@ -6,9 +6,7 @@
   <% end %>
 </p>
 <p><%= @article.body %></p>
-<% if @article.image.exists? %>
-  <p><%= image_tag @article.image.url(:medium) %></p>
-<% end %>
+<p><%= image_tag @article.image.url %></p>
 <%= link_to "<< Back to Articles List", articles_path %> <br /><br />
 <ul>
   <li>
