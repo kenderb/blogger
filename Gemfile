@@ -18,6 +18,7 @@ gem 'jbuilder',                   '2.10.0'
 gem 'bootsnap',                   '1.4.6', require: false
 gem 'tzinfo-data'
 gem 'paperclip'
+gem 'sorcery'
 
 group :development, :test do
   gem 'sqlite3', '1.4.2'
