@@ -1,7 +1,7 @@
 class Article < ApplicationRecord
-  has_many :comments
-  has_many :taggings
-  has_many :tags, through: :taggings
+  has_many :comments, dependent: :destroy
+  has_many :taggings, dependent: :destroy
+  has_many :tags, through: :taggings, dependent: :destroy
   def tag_list
     tags.collect {|tag| tag.name}.join(", ")
   end
